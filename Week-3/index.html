@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes - Basics Project</title>
+    <style>
+      body {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(222, 168, 248) 0%,
+          rgb(168, 222, 248) 21.8%,
+          rgb(189, 250, 205) 35.6%,
+          rgb(243, 250, 189) 52.9%,
+          rgb(250, 227, 189) 66.8%,
+          rgb(248, 172, 172) 90%,
+          rgb(254, 211, 252) 99.7%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #7d51e8;
+        padding: 20px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: 500px;
+        border-radius: 10px;
+      }
+      p {
+        padding: 12px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #a687f3;
+        color: #fff;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      h3 {
+        text-align: center;
+        border: 1px solid #f6c7b4;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+      .learn-more {
+        display: block;
+        margin: 10px;
+        text-decoration: none;
+        color: #58a52a;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the world of Trolls</h1>
+      <h2>I love the Trolls</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/502/original/signup-trolls.jpeg?1705830681"
+        alt="Trolls"
+      />
+      <h3></h3>
+      <p>
+        From the creators of Shrek comes the most smart, funny and irreverent
+        animated comedy of the year, DreamWorks' Trolls. This holiday season,
+        enter a colorful, wondrous world populated by hilariously unforgettable
+        characters and discover the story of the overly optimistic Trolls, with
+        a constant song on their lips, and the comically pessimistic Bergens,
+        who are only happy when they have trolls in their stomach.
+        <br />
+        <br />
+        Featuring original music from Justin Timberlake, the film stars the
+        voice talent of Anna Kendrick, Justin Timberlake, Russell Brand,
+        Christopher Mintz-Plasse, Russell Brand, Zooey Deschanel, Jeffrey
+        Tambor, Christine Baranski, James Corden, Kunal Nayyar, Ron Funches,
+        Icona Pop, Quvenzhané Wallis, with John Cleese and Gwen Stefani.
+        DreamWorks' Trolls is a fresh, broad comedy filled with music, heart and
+        hair-raising adventures
+      </p>
+      <a
+        href="https://www.dreamworks.com/trolls/explore"
+        target="_blank"
+        class="learn-more"
+      >
+        Get to know the Trolls
+      </a>
+      <button>Buy the game</button>
+      <p class="footer">
+        This page was built by
+        <a href="#" target="_blank"> Pholisa Fatyela </a>
+      </p>
+    </div>
+
+    <script>
+      function buyGame() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        let thankYou = document.querySelector("h3");
+        thankYou.innerHTML = "Thank you for buying the game " + name + "🕹";
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", buyGame);
+    </script>
+  </body>
+</html>
